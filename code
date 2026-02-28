@@ -5,10 +5,10 @@ print(m_e)     #printing the mass of electron
 import sympy as sp
 E=np.linspace(-1,1,1000)        # np.linspace[start_ponts,end_point,no. of steps]make the row matrix in 1000 points in the range from -1 to 1
 # print(k)
-u=0                            # this is fermi energy denoted as E_f
+E_f=u=0                            # this is fermi energy denoted as E_f
 a=[-1,0,1]                     # this is the values of chemical potentials denoted as \mu
 
-T=np.arange(0,1000,200)       # np.arange[start_ponts,end_point,step size] Matrix of temperature 
+T=np.arange(100,1000,200)       # np.arange[start_ponts,end_point,step size] Matrix of temperature 
 def F(a,T):                    # defining the function in general form
     g=(np.exp(((E-u)*e)/(k*T)))+a
     return 1/g
